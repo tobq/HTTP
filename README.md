@@ -29,3 +29,7 @@ Post("https://cors-anywhere.herokuapp.com", xmlHttp => console.log(xmlHttp.respo
 >Usage:
 >*...*
 >"
+
+----
+
+Ajax(method, url, data, cb)
