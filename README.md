@@ -32,7 +32,7 @@ Post("https://cors-anywhere.herokuapp.com", {data: "data"},  xmlHttp => console.
 >"
 
 ----
-underlying method
+Underlying method
 ```Javascript
 Ajax(method, url, data, cb)
 ```
