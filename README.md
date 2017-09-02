@@ -16,12 +16,12 @@ console.log(Get("https://cors-anywhere.herokuapp.com").response);
 ### Asynchronous
 
 ```Javascript
-Post("https://cors-anywhere.herokuapp.com", true)
+Post("https://cors-anywhere.herokuapp.com", null, true)
 ```
 Asynchronous request with no callback
 
 ```Javascript
-Post("https://cors-anywhere.herokuapp.com", xmlHttp => console.log(xmlHttp.response))
+Post("https://cors-anywhere.herokuapp.com", {data: "data"},  xmlHttp => console.log(xmlHttp.response))
 ```
 *console >*
 > "This API enables cross-origin requests to anywhere.
