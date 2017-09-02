@@ -6,7 +6,7 @@ Javascript HTTP methods
 ```Javascript
 console.log(Get("https://cors-anywhere.herokuapp.com").response);
 ```
-console > 
+*console >*
 >"This API enables cross-origin requests to anywhere.
 
 >Usage:
@@ -18,7 +18,7 @@ console >
 ```Javascript
 Get("https://cors-anywhere.herokuapp.com", xmlHttp => console.log(xmlHttp.response))
 ```
-console >
+*console >*
 > "This API enables cross-origin requests to anywhere.
 
 >Usage:
