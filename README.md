@@ -15,11 +15,12 @@ console.log(Get("https://cors-anywhere.herokuapp.com").response);
 
 ### Asynchronous
 
+Asynchronous request with no callback
 ```Javascript
 Post("https://cors-anywhere.herokuapp.com", null, true)
 ```
-Asynchronous request with no callback
 
+Asynchronous request with callback
 ```Javascript
 Post("https://cors-anywhere.herokuapp.com", {data: "data"},  xmlHttp => console.log(xmlHttp.response))
 ```
@@ -31,6 +32,7 @@ Post("https://cors-anywhere.herokuapp.com", {data: "data"},  xmlHttp => console.
 >"
 
 ----
+underlying method
 ```Javascript
 Ajax(method, url, data, cb)
 ```
