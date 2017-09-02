@@ -17,14 +17,8 @@ function Ajax(method, url, data, cb) {
         xmlHttp.setRequestHeader("Content-Type", "application/json");
         data = JSON.stringify(data);
     }
-    xmlHttp.onload = function () {
-        if (this.readyState === 4) {
-            try {
-                this.response = JSON.parse(this.responseText);
-            }
-            catch (err) { }
-            if (typeof cb === "function") cb(this);
-        }
+    if (typeof cb === "function") xmlHttp.onload = function () {
+        if (this.readyState === 4) cb(this);
     };
     xmlHttp.send(data);
     return xmlHttp;
