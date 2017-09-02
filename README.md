@@ -4,25 +4,23 @@ Javascript HTTP methods
 ### Synchronous
 
 ```Javascript
-Get("https://cors-anywhere.herokuapp.com").response
+console.log(Get("https://cors-anywhere.herokuapp.com").response);
 ```
-```
-> "This API enables cross-origin requests to anywhere.
+console > 
+>"This API enables cross-origin requests to anywhere.
 
-Usage:
-*...*
-"
-```
+>Usage:
+>*...*
+>"
 
 ### Asynchronous
 
 ```Javascript
 Get("https://cors-anywhere.herokuapp.com", xmlHttp => console.log(xmlHttp.response))
 ```
-```
+console >
 > "This API enables cross-origin requests to anywhere.
 
-Usage:
-*...*
-"
-```
+>Usage:
+>*...*
+>"
